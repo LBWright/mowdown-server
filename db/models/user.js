@@ -16,7 +16,6 @@ const UserSchema = new Schema({
       message: 'Name must be longer than 2 characters.'
     }
   },
-  userLevel: String,
   lastName: {
     type: String,
     validate: {
@@ -24,6 +23,7 @@ const UserSchema = new Schema({
       message: 'Name must be longer than 2 characters.'
     }
   },
+  userLevel: String,
   organization: {
     type: Schema.Types.ObjectId,
     ref: 'organization'

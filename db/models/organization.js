@@ -22,8 +22,7 @@ const OrganizationSchema = new Schema({
       ref: 'lot'
     }
   ],
-  finishedLots: Integer,
-  created: new Date()
+  completedLotsCount: Integer
 })
 
 const Organization = mongoose.model('organization', OrganizationSchema)
